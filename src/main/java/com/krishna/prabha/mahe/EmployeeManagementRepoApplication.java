@@ -3,14 +3,16 @@ package com.krishna.prabha.mahe;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.krishna.prabha.mahe.service.CustomerService;
 import com.krishna.prabha.mahe.service.EmployeeService;
+import com.krishna.prabha.mahe.service.EmployeeServiceSuplier;
 
 @SpringBootApplication
 public class EmployeeManagementRepoApplication {
 
 	public static void main(String[] args) {
 		System.out.println("/***===Started spring boot EmployeeManagementRepoApplication===***/");
-		EmployeeService.evaluateTaxEmployees("tax").stream().forEach(System.out::println);
+		/*EmployeeService.evaluateTaxEmployees("tax").stream().forEach(System.out::println);
 		
 		System.out.println("ASE: : "+EmployeeService.employeeSortingByASE());
 		System.out.println("DSE: : "+EmployeeService.employeeSortingByDSE());
@@ -18,7 +20,12 @@ public class EmployeeManagementRepoApplication {
 		System.out.println("Map key DSE: : "+EmployeeService.getAllMapEmployeesWithKeyDSE());
 		System.out.println("Map value ASE: : "+EmployeeService.getAllMapEmployeesWithValueASE());
 		System.out.println("Map value DSE: : "+EmployeeService.getAllMapEmployeesWithValueDSE());
-		//EmployeeService.getAllMapEmployeesWithKeyASE().stream().forEach(System.out::println);
+		EmployeeServiceSuplier.findAndAny();
+		EmployeeServiceSuplier.getDatabasedOnfilterInMap();
+		CustomerService.getCustomerDataOnetoOne();
+		CustomerService.getCustomerDataOnetoMany();
+		CustomerService.getCustomerDataOnetoManyWithFlatMap();
+		//EmployeeService.getAllMapEmployeesWithKeyASE().stream().forEach(System.out::println);*/
 		SpringApplication.run(EmployeeManagementRepoApplication.class, args);
 	}
 
