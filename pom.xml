@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.krishna.prabha.mahe</groupId>
 	<artifactId>eai-1009-employee-management-repo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>eai-1009-employee-management-repo</name>
 	<description>Demo project for Spring Boot</description>
